@@ -37,6 +37,7 @@
 // }
 import 'package:flutter/material.dart';
 import 'package:scratch/samples/ui/rive_app/home.dart';
+import 'package:scratch/template/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,8 +47,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Your Rive App',
-      home: RiveAppHome(),
+      title: 'Fit Metric',
+      home: SplashScreen(),
     );
   }
 }

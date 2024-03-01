@@ -18,7 +18,7 @@ class _SideMenuState extends State<SideMenu> {
   final List<MenuItemModel> _historyMenuIcons = MenuItemModel.menuItems2;
   final List<MenuItemModel> _themeMenuIcon = MenuItemModel.menuItems3;
   String _selectedMenu = MenuItemModel.menuItems[0].title;
-  bool _isDarkMode = false;
+  bool _isDarkMode = true;
 
   void onThemeRiveIconInit(artboard) {
     final controller = StateMachineController.fromArtboard(
@@ -34,12 +34,12 @@ class _SideMenuState extends State<SideMenu> {
     });
   }
 
-  void onThemeToggle(value) {
-    setState(() {
-      _isDarkMode = value;
-    });
-    _themeMenuIcon[0].riveIcon.status!.change(value);
-  }
+  // void onThemeToggle(value) {
+  //   setState(() {
+  //     _isDarkMode = value;
+  //   });
+  //   _themeMenuIcon[0].riveIcon.status!.change(value);
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,7 @@ class _SideMenuState extends State<SideMenu> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Ashu",
+                      "Amit Kumar Singh",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -94,12 +94,12 @@ class _SideMenuState extends State<SideMenu> {
               child: Column(
                 children: [
                   MenuButtonSection(
-                      title: "BROWSE",
+                      title: "FEATURES",
                       selectedMenu: _selectedMenu,
                       menuIcons: _browseMenuIcons,
                       onMenuPress: onMenuPress),
                   MenuButtonSection(
-                      title: "HISTORY",
+                      title: "ML MODELS",
                       selectedMenu: _selectedMenu,
                       menuIcons: _historyMenuIcons,
                       onMenuPress: onMenuPress),
@@ -135,7 +135,7 @@ class _SideMenuState extends State<SideMenu> {
                       fontWeight: FontWeight.w600),
                 ),
               ),
-              CupertinoSwitch(value: _isDarkMode, onChanged: onThemeToggle),
+              //CupertinoSwitch(value: _isDarkMode, onChanged: onThemeToggle),
             ]),
           )
         ],

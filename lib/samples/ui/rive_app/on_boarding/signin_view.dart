@@ -121,7 +121,7 @@ class _SignInViewState extends State<SignInView> {
                         ),
                         const SizedBox(height: 24),
                         const Text(
-                            "Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.",
+                            "Welcome to the world of FitMetric, Keeping you healthy is our Goal",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 fontFamily: "Inter",
@@ -165,7 +165,7 @@ class _SignInViewState extends State<SignInView> {
                           decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xFFF77D8E).withOpacity(0.5),
+                                color: const Color(0xFF1B6528).withOpacity(0.5),
                                 blurRadius: 20,
                                 offset: const Offset(0, 10),
                               )
@@ -173,7 +173,7 @@ class _SignInViewState extends State<SignInView> {
                           ),
                           child: CupertinoButton(
                             padding: const EdgeInsets.all(20),
-                            color: const Color(0xFFF77D8E),
+                            color: const Color(0xFF1B6528),
                             borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(8),
                               topRight: Radius.circular(20),

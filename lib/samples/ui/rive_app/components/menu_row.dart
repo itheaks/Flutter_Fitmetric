@@ -41,7 +41,7 @@ class MenuRow extends StatelessWidget {
           height: 56,
           curve: const Cubic(0.2, 0.8, 0.2, 1),
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Color(0xFF1B6528),
             borderRadius: BorderRadius.circular(10),
           ),
         ),

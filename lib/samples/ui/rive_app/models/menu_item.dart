@@ -14,39 +14,45 @@ class MenuItemModel {
 
   static List<MenuItemModel> menuItems = [
     MenuItemModel(
-      title: "Home",
-      riveIcon: TabItem(stateMachine: "HOME_interactivity", artboard: "HOME"),
+      title: "Energy Calculator",
+      riveIcon: TabItem(stateMachine: "STAR_Interactivity", artboard: "LIKE/STAR"),
     ),
     MenuItemModel(
-      title: "Search",
-      riveIcon:
-          TabItem(stateMachine: "SEARCH_Interactivity", artboard: "SEARCH"),
+      title: "Nutrition",
+      riveIcon: TabItem(stateMachine: "STAR_Interactivity", artboard: "LIKE/STAR"),
     ),
     MenuItemModel(
-      title: "Favorites",
-      riveIcon:
-          TabItem(stateMachine: "STAR_Interactivity", artboard: "LIKE/STAR"),
+      title: "Mental Health",
+      riveIcon: TabItem(stateMachine: "STAR_Interactivity", artboard: "LIKE/STAR"),
     ),
     MenuItemModel(
-      title: "Help",
-      riveIcon: TabItem(stateMachine: "CHAT_Interactivity", artboard: "CHAT"),
+      title: "Games",
+      riveIcon: TabItem(stateMachine: "STAR_Interactivity", artboard: "LIKE/STAR"),
     ),
   ];
 
   static List<MenuItemModel> menuItems2 = [
     MenuItemModel(
-      title: "History",
+      title: "Prescription Analysis",
       riveIcon: TabItem(stateMachine: "TIMER_Interactivity", artboard: "TIMER"),
     ),
     MenuItemModel(
-      title: "Notification",
-      riveIcon: TabItem(stateMachine: "BELL_Interactivity", artboard: "BELL"),
+      title: "Medicine Suggestion",
+      riveIcon: TabItem(stateMachine: "TIMER_Interactivity", artboard: "TIMER"),
+    ),
+    MenuItemModel(
+      title: "Know Your Disease",
+      riveIcon: TabItem(stateMachine: "TIMER_Interactivity", artboard: "TIMER"),
+    ),
+    MenuItemModel(
+      title: "Health Monitoring",
+      riveIcon: TabItem(stateMachine: "TIMER_Interactivity", artboard: "TIMER"),
     ),
   ];
 
   static List<MenuItemModel> menuItems3 = [
     MenuItemModel(
-      title: "Dark Mode",
+      title: "Settings",
       riveIcon:
           TabItem(stateMachine: "SETTINGS_Interactivity", artboard: "SETTINGS"),
     ),

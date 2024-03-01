@@ -2,37 +2,48 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:scratch/widgets/movie_card.dart';
 
-import 'models/movie_model.dart';
+import '../models/movie_model.dart';
+import '../samples/ui/rive_app/theme.dart';
 
 final List<String> movieListBack = [
   'assets/images/bloodshot_back.jpg',
   'assets/images/dolittle_back.jpg',
-  'assets/images/mulan_back.jpeg',
-  'assets/images/sonic_back.jpg',
-  'assets/images/the_call_of_the_wild_back.jpg',
+  'assets/images/bloodshot_back.jpg',
+  'assets/images/dolittle_back.jpg',
+  // 'assets/images/mulan_back.jpeg',
+  // 'assets/images/sonic_back.jpg',
+  // 'assets/images/the_call_of_the_wild_back.jpg',
 ];
 
 final List<Movie> movieList = [
   Movie(
-    name: 'Bloodshot',
+    name: 'Amit Kumar Singh',
     poster: 'assets/images/bloodshot.jpg',
   ),
   Movie(
-    name: 'Dolittle',
+    name: 'Kaustubh Vinayak Kulkarni',
     poster: 'assets/images/dolittle.jpg',
   ),
   Movie(
-    name: 'Mulan',
-    poster: 'assets/images/mulan.jpg',
+    name: 'Amit Kumar Singh',
+    poster: 'assets/images/bloodshot.jpg',
   ),
   Movie(
-    name: 'Sonic',
-    poster: 'assets/images/sonic.jpg',
+    name: 'Kaustubh Vinayak Kulkarni',
+    poster: 'assets/images/dolittle.jpg',
   ),
-  Movie(
-    name: 'The call of the wild',
-    poster: 'assets/images/the_call_of_the_wild.jpg',
-  ),
+  // Movie(
+  //   name: 'Mulan',
+  //   poster: 'assets/images/mulan.jpg',
+  // ),
+  // Movie(
+  //   name: 'Sonic',
+  //   poster: 'assets/images/sonic.jpg',
+  // ),
+  // Movie(
+  //   name: 'The call of the wild',
+  //   poster: 'assets/images/the_call_of_the_wild.jpg',
+  // ),
 ];
 
 class SlidePage extends StatefulWidget {
@@ -95,19 +106,22 @@ class _SlidePageState extends State<SlidePage> {
           ),
         ],
       ),
-      floatingActionButton: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height * 0.20),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            backgroundColor:  RiveAppTheme.backgroundDark,
+            minimumSize: Size(MediaQuery.of(context).size.width * 0.80, 45),
           ),
-          backgroundColor: Colors.amber[600],
-          minimumSize: Size(MediaQuery.of(context).size.width * 0.80, 45),
-        ),
-        onPressed: () {},
-        child: Text(
-          "Book now".toUpperCase(),
-          style:
-              const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
+          onPressed: () {},
+          child: Text(
+            "Meet The Team".toUpperCase(),
+            style:
+                const TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 45),
+          ),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

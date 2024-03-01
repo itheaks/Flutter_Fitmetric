@@ -17,47 +17,52 @@ class CourseModel {
 
   static List<CourseModel> courses = [
     CourseModel(
-        title: "Animations in SwiftUI",
-        subtitle: "Build and animate an iOS app from scratch",
-        caption: "20 sections - 3 hours",
-        color: const Color(0xFF7850F0),
+        title: "Not \nUploaded",
+        subtitle: "Yet To Upload",
+        caption: "ENJOY",
+        //color: const Color(0xFF78EF51),
+        color: const Color(0xFF58A22C),
         image: app_assets.topic_1),
     CourseModel(
-        title: "Build Quick Apps with SwiftUI",
-        subtitle:
-            "Apply your Swift and SwiftUI knowledge by building real, quick and various applications from scratch",
-        caption: "47 sections - 11 hours",
-        color: const Color(0xFF6792FF),
+        title: "Not \nUploaded",
+        subtitle: "Yet To Upload",
+        caption: "ENJOY",
+        //color: const Color(0xFF67FF92),
+        color: const Color(0xFF58A22C),
         image: app_assets.topic_2),
     CourseModel(
-        title: "Build a SwiftUI app for iOS 15",
-        subtitle:
-            "Design and code a SwiftUI 3 app with custom layouts, animations and gestures using Xcode 13, SF Symbols 3, Canvas, Concurrency, Searchable and a whole lot more",
-        caption: "21 sections - 4 hours",
-        color: const Color(0xFF005FE7),
+        title: "Not \nUploaded",
+        subtitle: "Yet To Upload",
+        caption: "ENJOY",
+        color: const Color(0xFF58A22C),
+        //color: const Color(0xFF00E75E),
         image: app_assets.topic_1),
   ];
 
   static List<CourseModel> courseSections = [
     CourseModel(
-        title: "State Machine",
-        caption: "Watch video - 15 mins",
-        color: const Color(0xFF9CC5FF),
+        title: "Not Uploaded",
+        caption: "Yet to Upload",
+        color: const Color(0xFF58A22C),
+        //color: const Color(0xFF9CFFC5),
         image: app_assets.topic_2),
     CourseModel(
-        title: "Animated Menu",
-        caption: "Watch video - 10 mins",
-        color: const Color(0xFF6E6AE8),
+        title: "Not Uploaded",
+        caption: "Yet to Upload",
+        color: const Color(0xFF58A22C),
+        //color: const Color(0xFF6EE86A),
         image: app_assets.topic_1),
     CourseModel(
-        title: "Tab Bar",
-        caption: "Watch video - 8 mins",
-        color: const Color(0xFF005FE7),
+        title: "Not Uploaded",
+        caption: "Yet to Upload",
+        color: const Color(0xFF58A22C),
+        //color: const Color(0xFF00E75F),
         image: app_assets.topic_2),
     CourseModel(
-        title: "Button",
-        caption: "Watch video - 9 mins",
-        color: const Color(0xFFBBA6FF),
+        title: "Not Uploaded",
+        caption: "Yet to Upload",
+        color: const Color(0xFF58A22C),
+        //color: const Color(0xFFBBFFA6),
         image: app_assets.topic_1),
   ];
 }

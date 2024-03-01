@@ -39,7 +39,7 @@ class MovieCardWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Action ",
+              "Developer ",
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w300,
@@ -51,7 +51,7 @@ class MovieCardWidget extends StatelessWidget {
               size: 4,
             ),
             Text(
-              " Adventure",
+              " Designer",
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w300,
@@ -62,43 +62,43 @@ class MovieCardWidget extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        const Text(
-          "4.0",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w300),
-        ),
-        const SizedBox(
-          height: 5,
-        ),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              Icons.star,
-              size: 12,
-              color: Colors.white,
-            ),
-            Icon(
-              Icons.star,
-              size: 12,
-              color: Colors.white,
-            ),
-            Icon(
-              Icons.star,
-              size: 12,
-              color: Colors.white,
-            ),
-            Icon(
-              Icons.star,
-              size: 12,
-              color: Colors.white,
-            ),
-            Icon(
-              Icons.star_border,
-              size: 12,
-              color: Colors.white,
-            ),
-          ],
-        )
+        // const Text(
+        //   "4.0",
+        //   style: TextStyle(color: Colors.white, fontWeight: FontWeight.w300),
+        // ),
+        // const SizedBox(
+        //   height: 5,
+        // ),
+        // const Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: <Widget>[
+        //     Icon(
+        //       Icons.star,
+        //       size: 12,
+        //       color: Colors.white,
+        //     ),
+        //     Icon(
+        //       Icons.star,
+        //       size: 12,
+        //       color: Colors.white,
+        //     ),
+        //     Icon(
+        //       Icons.star,
+        //       size: 12,
+        //       color: Colors.white,
+        //     ),
+        //     Icon(
+        //       Icons.star,
+        //       size: 12,
+        //       color: Colors.white,
+        //     ),
+        //     Icon(
+        //       Icons.star_border,
+        //       size: 12,
+        //       color: Colors.white,
+        //     ),
+        //   ],
+        // )
       ],
     );
   }

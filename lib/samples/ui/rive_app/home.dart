@@ -9,8 +9,10 @@ import 'package:scratch/samples/ui/rive_app/on_boarding/onboarding_view.dart';
 import 'package:scratch/samples/ui/rive_app/navigation/side_menu.dart';
 import 'package:scratch/samples/ui/rive_app/theme.dart';
 import 'package:scratch/samples/ui/rive_app/assets.dart' as app_assets;
-
-import '../../../slide.dart';
+import 'package:scratch/template/news.dart';
+import 'package:scratch/template/search.dart';
+import '../../../template/chatbot.dart';
+import '../../../template/slide.dart';
 
 // Common Tab Scene for the tabs other than 1st one, showing only tab name in center
 Widget commonTabScene(String tabName) {
@@ -44,9 +46,12 @@ class _RiveAppHomeState extends State<RiveAppHome>
   Widget _tabBody = Container(color: RiveAppTheme.background);
   final List<Widget> _screens = [
     const HomeTabView(),
-    commonTabScene("Search"),
-    commonTabScene("Timer"),
-    commonTabScene("Bell"),
+    //commonTabScene("Search"),
+    SearchPage(),
+    //commonTabScene("Timer"),
+    ChatBotPage(),
+    //commonTabScene("Bell"),
+    NewsPage(),
     //commonTabScene("User"),
     SlidePage(),
   ];
